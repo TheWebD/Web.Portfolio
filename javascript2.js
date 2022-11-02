@@ -61,3 +61,12 @@ let getMonth = document.querySelectorAll('#getMonthSkill')
 }
 dispatchMonthCount();
 
+function submitBtn(){
+var SubmitBtn = document.querySelectorAll('#submitBtn')
+    SubmitBtn[0].addEventListener('click', () => {
+        window.alert("It's not working properly, Test Button Only!")
+    })
+}
+submitBtn()
+
+    
