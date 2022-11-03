@@ -46,9 +46,11 @@ function dispatchMonthCount(){
 let getDate = new Date()
 let getDay = getDate.getDay()
 let getMonth = document.querySelectorAll('#getMonthSkill')
+let programmingExp = document.getElementById('programmingSkill')
 
     if(getDay.length >= 2){
         let getFullDate = getDate.getFullYear()+"-"+getDate.getMonth()+"-"+getDay
+        programmingExp.innerHTML = getMonthExperience(new Date('2018-05-01'), new Date(String(getFullDate)))
         getMonth.forEach(elementId => {
             elementId.innerHTML = getMonthExperience(new Date('2022-07-01'), new Date(String(getFullDate)))
         });
@@ -57,6 +59,14 @@ let getMonth = document.querySelectorAll('#getMonthSkill')
         getMonth.forEach(elementId => {
             elementId.innerHTML = getMonthExperience(new Date('2022-07-01'), new Date(String(getFullDate)))
         });
+    }
+
+    if(getDay.length >= 2){
+        let getFullDate = getDate.getFullYear()+"-"+getDate.getMonth()+"-"+getDay
+        programmingExp.innerHTML = getMonthExperience(new Date('2018-05-01'), new Date(String(getFullDate)))
+    }else{
+        let getFullDate = getDate.getFullYear()+"-"+getDate.getMonth()+"-"+getDay
+        programmingExp.innerHTML = getMonthExperience(new Date('2018-05-01'), new Date(String(getFullDate)))
     }
 }
 dispatchMonthCount();
