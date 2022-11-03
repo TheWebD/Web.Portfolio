@@ -816,23 +816,53 @@ section {
     /*Portfolio section*/
     .portfolios {
         grid-template-columns: 1fr;
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
     }
 
     /*Certificate section*/
     .certificates {
         grid-template-columns: 1fr;
-        margin-bottom: 5rem;
+        margin-bottom: 6rem;
     }
 
     section .main-title .bg-text {
-        font-size: 3.8rem;
+        font-size: 3.2rem;
     }
 
     /*Contact section*/
     .contact-content-con {
         flex-direction: column;
-        margin-bottom: 3rem;
+        margin-bottom: 6rem;
+    }
+
+    .contact-content-con .contact-left {
+        text-align: center;
+    }
+
+    .contact-content-con .contact-left .contact-info .contact-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-content-con .contact-left .contact-info .contact-item .icon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    .contact-content-con .contact-left .contact-info .contact-item p {
+        font-size: .8rem;
+        margin-bottom: .5rem;
+    }
+
+    .contact-content-con .contact-left .contact-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact-content-con .contact-right {
