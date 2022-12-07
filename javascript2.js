@@ -65,4 +65,3 @@ var SubmitBtn = document.querySelectorAll('#submitBtn')
 }
 submitBtn()
 
-    
